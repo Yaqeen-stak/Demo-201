@@ -1,0 +1,11 @@
+h1 {
+    text-align: center;
+    color:red;
+    background-blend-mode: color-burn;
+}
+body {
+    background-image: url(https://image.freepik.com/free-photo/construction-worker-with-helmet-pointing-object_1401-21.jpg);
+}
+p {
+    font-size: x-large;
+}
