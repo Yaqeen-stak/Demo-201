@@ -2,10 +2,13 @@ h1 {
     text-align: center;
     color:red;
     background-blend-mode: color-burn;
+   text-shadow: 70px;
 }
 body {
-    background-image: url(https://image.freepik.com/free-photo/construction-worker-with-helmet-pointing-object_1401-21.jpg);
+    background-image: url(https://image.freepik.com/free-photo/construction-worker-with-helmet-pointing-object_1401-21.jpg) ; background-repeat: no-repeat;;
+    background-repeat: no-repeat;
 }
 p {
     font-size: x-large;
+    color: blue;
 }
