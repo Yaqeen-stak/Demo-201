@@ -9,3 +9,7 @@ Finally ,we told him the score that he got in the game ,so we let him enter to t
 we uesd JS to add the quastions and we used for,while,if and switch statments.
 we used CSS to style the pag.
 and we linked both files to the HTML index.
+
+* We added functions to the logic or our game.
+* Navigator: Yaqeen Hmad.
+* Driver: Batool Malkawi.
