@@ -13,9 +13,7 @@ function inputQas1() {
 
 }
 function checkQas1(qas1) {
-    while (qas1 !== 'yes' && qas1 !== 'no') {
-        qas1 = prompt('Please answer with yes or no only');
-    }
+    
     if (qas1 === 'yes') {
         console.log('the first  answer is correct! ');
         counter++;
@@ -25,6 +23,7 @@ function checkQas1(qas1) {
         console.log('user didn\'t know :( ');
         alert('It was easy quastion :( ');
     }
+    return(counter);
 }
 function getQas1() {
     var qas1 = inputQas1();
@@ -39,9 +38,7 @@ function inputQas2() {
 }
 
 function checkQas2(qas2) {
-    while (qas2 !== 'yes' && qas2 !== 'no') {
-        qas2 = prompt('Please answer with yes or no only');
-    }
+   
     if (qas2 === 'yes') {
         console.log('the second  answer is correct!');
         counter++;
@@ -51,6 +48,7 @@ function checkQas2(qas2) {
         console.log('user didn\'t know :( ');
         alert('It was easy quastion too :( ');
     }
+    return (counter);
 }
 
 function getQas2() {
@@ -65,9 +63,7 @@ function inputQas3() {
 }
 
 function checkQas3(qas3) {
-    while (qas3 !== 'yes' && qas3 !== 'no') {
-        qas3 = prompt('Please answer with yes or no only');
-    }
+   
     if (qas3 === 'yes') {
         console.log('the third answer is correct!!');
         counter++;
@@ -77,7 +73,9 @@ function checkQas3(qas3) {
         console.log('user didn\'t know :( ');
         alert('It\'s not easy quastion but you should know :( ');
     }
+    return (counter);
 }
+
 
 function getQas3() {
     var qas3 = inputQas3();
@@ -92,9 +90,7 @@ function inputQas4() {
 }
 
 function checkQas4(qas4) {
-    while (qas4 !== 'yes' && qas4 !== 'no') {
-        qas4 = prompt('Please answer with yes or no only');
-    }
+   
     if (qas4 === 'yes') {
         console.log('the fourth answer is correct!!');
         counter++;
@@ -104,6 +100,7 @@ function checkQas4(qas4) {
         console.log('user didn\'t know :( ');
         alert('It\'s not easy quastion, I well help u, it\'s writing "make it our little secret" ');
     }
+    return (counter);
 }
 
 function getQas4() {
@@ -118,9 +115,7 @@ function inputQas5() {
 }
 
 function checkQas5(qas5) {
-    while (qas5 !== 'yes' && qas5 !== 'no') {
-        qas5 = prompt('Please answer with yes or no only');
-    }
+   
     switch (qas5) {
         case ('yes'):
             console.log('the fifth answer is correct!!');
@@ -136,6 +131,7 @@ function checkQas5(qas5) {
             break;
 
     }
+    return (counter);
 }
 
 function getQas5() {
@@ -174,7 +170,7 @@ function checkQas6(){
         counter++;
         alert('Perfect!!');
     }
-    
+    return (counter);   
 }
 
 function getQas6(){
@@ -198,16 +194,18 @@ for (var i = 0; i < 6; i++) {
         counter = counter
     }
 }
+return (counter);
 }
 
 function getQas7(){
     checkQas7();
     alert('My hobbies is 1.writing 2.Cooking 3.reading 4.ply chess 5.hand embroidery ');
+
 }
 
 
 function score(counter){
-alert('your scor is ' + counter + 'out of 7');
+ alert  ('your scor is ' + counter + ' out of 7');
 }
 
 
@@ -219,7 +217,7 @@ getQas4();
 getQas5();
 getQas6();
 getQas7();
-
+score(counter);
 
 
 
