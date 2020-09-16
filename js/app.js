@@ -2,7 +2,6 @@
 var counter = 0;
 function user() {
     var user = prompt('What is your name ?');
-    console.log('The user name is ' + user);
     alert('You are welcome ' + ' ' + user + ' Please answer the quastions by Yes/No only !');
     return (user);
 }
@@ -14,38 +13,32 @@ function inputQas1() {
 }
 function checkQas1(qas1) {
     
-    if (qas1 === 'yes') {
-        console.log('the first  answer is correct! ');
+    if (qas1 === 'yes' || qas1 === 'y' .toLowerCase() .toUpperCase()) {
         counter++;
         alert('It\'s just the beginning ! you should know me more !');
     }
-    else if (qas1 === 'no') {
-        console.log('user didn\'t know :( ');
+    else if (qas1 === 'no' || qas1 === 'n'  .toLowerCase() .toUpperCase()) {
         alert('It was easy quastion :( ');
     }
     return(counter);
 }
 function getQas1() {
     var qas1 = inputQas1();
-    console.log('The user answer is ' + qas1);
     checkQas1(qas1);
 }
 
 function inputQas2() {
     var qas2 = prompt('Do you know what\'s my last name ?');
-    console.log('the user answer is  ' + qas2);
     return (qas2);
 }
 
 function checkQas2(qas2) {
    
-    if (qas2 === 'yes') {
-        console.log('the second  answer is correct!');
+    if (qas2 === 'yes'  || qas2 === 'y' .toLowerCase() .toUpperCase()) {
         counter++;
         alert('It\'s goog ! you should know me more !');
     }
-    else if (qas2 === 'no') {
-        console.log('user didn\'t know :( ');
+    else if (qas2 === 'no' || qas2 === 'n' .toLowerCase().toUpperCase()) {
         alert('It was easy quastion too :( ');
     }
     return (counter);
@@ -58,19 +51,16 @@ function getQas2() {
 
 function inputQas3() {
     var qas3 = prompt('Do you know my favorte drink ? ');
-    console.log('the user answer is  ' + qas3);
     return (qas3);
 }
 
 function checkQas3(qas3) {
    
-    if (qas3 === 'yes') {
-        console.log('the third answer is correct!!');
+    if (qas3 === 'yes'  || qas3 === 'y' .toLowerCase() .toUpperCase()) {
         counter++;
         alert('Thats advanced ! you should know me more !');
     }
-    else if (qas3 === 'no') {
-        console.log('user didn\'t know :( ');
+    else if (qas3 === 'no'  || qas3 === 'n'  .toLowerCase() .toUpperCase) {
         alert('It\'s not easy quastion but you should know :( ');
     }
     return (counter);
@@ -85,19 +75,16 @@ function getQas3() {
 
 function inputQas4() {
     var qas4 = prompt('Do you know what\'s my favorte talent ?');
-    console.log('the user answer is  ' + qas4);
     return (qas4);
 }
 
 function checkQas4(qas4) {
    
-    if (qas4 === 'yes') {
-        console.log('the fourth answer is correct!!');
+    if (qas4 === 'yes' || qas4 === 'y' .toLowerCase() .toUpperCase()) {
         counter++;
         alert('It seems that you know me :) ! you should know me more !');
     }
-    else if (qas4 === 'no') {
-        console.log('user didn\'t know :( ');
+    else if (qas4 === 'no'  || qas4 === 'n' .toLowerCase() .toUpperCase()) {
         alert('It\'s not easy quastion, I well help u, it\'s writing "make it our little secret" ');
     }
     return (counter);
@@ -110,24 +97,20 @@ function getQas4() {
 
 function inputQas5() {
     var qas5 = prompt('Do you my favorte songe ?!');
-    console.log('the user answer is  ' + qas5);
     return (qas5);
 }
 
 function checkQas5(qas5) {
    
     switch (qas5) {
-        case ('yes'):
-            console.log('the fifth answer is correct!!');
+        case ('yes' || 'y' .toLowerCase() .toUpperCase()):
             counter++;
             alert(' Sure you are my best friend :) !');
             break;
-        case ('no'):
-            console.log('user didn\'t know :( ');
+        case ('no'|| 'n'  .toLowerCase() .toUpperCase()):
             alert('Don\'t be sad , usually i don\'t tell anyone about that');
             break;
         default:
-            console.log('Sorry, you out of expectations ');
             break;
 
     }
@@ -149,8 +132,6 @@ function checkQas6(){
     for (var i = 0; i < 4; i++) {
         var number = inputQas6();
         var num = parseInt(number);
-        console.log(typeof num)
-        console.log('user answer is ' + num);
         if (num == "") {
             alert('enter a number')
         }
@@ -185,7 +166,6 @@ function checkQas7(){
 var hobb = ["writing", "Cooking", "reading", "ply chess", "hand embroidery"];
 for (var i = 0; i < 6; i++) {
     var guess = inputQas7();
-    console.log('user answer is ' + guess);
     if (guess === "writing" || guess === "cooking" || guess === "reading" || guess === "ply chess" || guess === "hand embroidery") {
         counter++;
         alert('Thats perfect')
