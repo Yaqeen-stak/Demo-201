@@ -13,11 +13,11 @@ function inputQas1() {
 }
 function checkQas1(qas1) {
     
-    if (qas1 === 'yes' || qas1 === 'y' .toLowerCase() .toUpperCase()) {
+    if (qas1.toLowerCase() === 'yes' || qas1.toLowerCase() === 'y') {
         counter++;
         alert('It\'s just the beginning ! you should know me more !');
     }
-    else if (qas1 === 'no' || qas1 === 'n'  .toLowerCase() .toUpperCase()) {
+    else if (qas1.toLowerCase() === 'no' || qas1.toLowerCase() === 'n') {
         alert('It was easy quastion :( ');
     }
     return(counter);
@@ -34,11 +34,11 @@ function inputQas2() {
 
 function checkQas2(qas2) {
    
-    if (qas2 === 'yes'  || qas2 === 'y' .toLowerCase() .toUpperCase()) {
+    if (qas2.toLowerCase() === 'yes' || qas2.toLowerCase() === 'y'){
         counter++;
         alert('It\'s goog ! you should know me more !');
     }
-    else if (qas2 === 'no' || qas2 === 'n' .toLowerCase().toUpperCase()) {
+    else if (qas2.toLowerCase() === 'no' || qas2.toLowerCase() === 'n') {
         alert('It was easy quastion too :( ');
     }
     return (counter);
@@ -56,11 +56,11 @@ function inputQas3() {
 
 function checkQas3(qas3) {
    
-    if (qas3 === 'yes'  || qas3 === 'y' .toLowerCase() .toUpperCase()) {
+    if (qas3.toLowerCase() === 'yes' || qas3.toLowerCase() === 'y') {
         counter++;
         alert('Thats advanced ! you should know me more !');
     }
-    else if (qas3 === 'no'  || qas3 === 'n'  .toLowerCase() .toUpperCase) {
+    else if (qas3.toLowerCase() === 'no' || qas3.toLowerCase() === 'n') {
         alert('It\'s not easy quastion but you should know :( ');
     }
     return (counter);
@@ -80,11 +80,11 @@ function inputQas4() {
 
 function checkQas4(qas4) {
    
-    if (qas4 === 'yes' || qas4 === 'y' .toLowerCase() .toUpperCase()) {
+    if (qas4.toLowerCase() === 'yes'|| qas4.toLowerCase() === 'y') {
         counter++;
         alert('It seems that you know me :) ! you should know me more !');
     }
-    else if (qas4 === 'no'  || qas4 === 'n' .toLowerCase() .toUpperCase()) {
+    else if (qas4.toLowerCase() === 'no' || qas4.toLowerCase() === 'n') {
         alert('It\'s not easy quastion, I well help u, it\'s writing "make it our little secret" ');
     }
     return (counter);
@@ -103,11 +103,11 @@ function inputQas5() {
 function checkQas5(qas5) {
    
     switch (qas5) {
-        case ('yes' || 'y' .toLowerCase() .toUpperCase()):
+        case ('yes'.toLowerCase() || 'y'.toLowerCase()):
             counter++;
             alert(' Sure you are my best friend :) !');
             break;
-        case ('no'|| 'n'  .toLowerCase() .toUpperCase()):
+        case ('no'.toLowerCase()|| 'n'.toLowerCase()):
             alert('Don\'t be sad , usually i don\'t tell anyone about that');
             break;
         default:
